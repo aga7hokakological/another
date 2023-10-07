@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+signer_authorization = "7GrBo1xfcpmGkS83Lh9M8oZscRzn5EqQyyiWGadDTmEN"
+signer_authorization_safe = "2t1fXcTEH6iP9P51AiueiDyHFR6pT38voU5brVJ6VGaB"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/agathokako/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
