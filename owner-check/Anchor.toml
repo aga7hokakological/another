@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+owner_check = "E4jH2DAShdWfNeXJCdMRsZixTPuA5Xag9T7pUPQVAXeS"
+owner_check_safe = "GbJQUMViAh3uuQPL26xBxmkCo6d2kFFq5E6ShZSN9sXK"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/agathokako/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+overflow = "83LcXFgnVmkUsgqKw8DfD141MWQMKCvwWhDY2X32zvfc"
+overflow_safe = "CVq7vvAgiCUpCvQjHgoBxcGd2yyzfq8iVPii371SJvhK"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/agathokako/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
